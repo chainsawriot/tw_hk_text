@@ -12,10 +12,10 @@ install.packages(c('geometry', 'Rtsne', 'rsvd'))
 install.packages(c('tidyverse', 'rio', 'quanteda', 'rtweet', 'topicmodels', 'stm'))
 ```
 
-For the spacyr course, you need to install one more package:
+For the spacyr course, you need to install two more packages:
 
 ``` r
-install.packages(c('spacyr'))
+install.packages(c('spacyr', 'igraph'))
 require(spacyr)
 spacy_install()
 ```
