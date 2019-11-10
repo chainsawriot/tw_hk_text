@@ -118,7 +118,7 @@ val_dfm %>% quanteda::convert(to = 'data.frame') %>%
   mutate(afinn_score = (neg5 * -5) + (neg4 * -4) + (neg3 * -3) + (neg2 * -2) +
            (neg1 * -1) + (zero * 0) + (pos1 * 1) + (pos2 * 2) + (pos3 * 3) +
            (pos4 * 4) + (pos5 * 5)) %>% select(afinn_score) -> afinn_score
-plot(gold_standard, afinn_score$afinn_score[1:20])
+plot(gold_standard, afinn_score$afinn_score)
 ### If the sentiment dictionary is reasonably good, use it for analysis.
 
 trump_afinn <- dfm_lookup(trump_dfm2, dictionary = afinn)
